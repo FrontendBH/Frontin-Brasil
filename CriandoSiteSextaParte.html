@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<!--CSS-->
+		<link rel="stylesheet" href="main.css">
+		<!--SEO-->
+		<meta name="author" content="André Rodrigues">
+		<meta name="description" content="Site voltado para compartilhar conhecimento de desenvolvimento web para Front-end">
+		<meta name="robots" content="index, follow">
+		<meta name="keywords" content="">		
+		<title>Frontin-Brasil</title>
+	</head>
+	<body>
+		<main class="geral">
+			<nav class="navbar">
+				<div class="logo">
+					<a href="">
+						<span>FRONTIN-</span>
+						BRASIL
+					</a>
+				</div>
+				<ul class="links">
+					<a href="index.html" class="scrollSuave">HOME</a>
+					<a href="#post" class="scrollSuave">POSTAGENS</a>
+					<a href="">VÍDEOS</a>
+					<a href="">VAGAS DE EMPREGO</a>
+					<a href="">E-BOOKS</a>
+					<a href="">SLIDES</a>
+					<a href="">CONTRIBUA</a>
+				</ul>
+			</nav><!--/menu-->
+			<section class="conteudo">
+				<header class="cabecalho1">
+					<article class="container">
+						<div class="row">
+							<div class="col-12">
+								<h1>CONSTRUINDO O PRIMEIRO SITE (PARTE 6)</h1>								
+							</div>		
+						</div>
+					</article>					
+				</header><!--/header-->
+				<article class="container artigos" id="post">
+					<dir class="row">
+						<div class="col-12">							
+							<h2>Finalizando nosso header</h2>							
+							<p>
+								Finalizamos no post anterior nossa grid, agora temos que finalizar nosso header confira abaixo se seu header está assim:
+							</p>
+							<img src="https://github.com/FrontendBH/Frontin-Brasil/blob/master/Assets/img/previa.png?raw=true" alt="Imagem previa do header">
+							<p>
+								Caso esteja desse jeito está tudo indo ok! Temos uma imagem de fundo em nosso header bem legal, mas falta o nosso texto do header até então será responsável pelas boas vindas ao site. Para isto escreva a tag h1 dentro da tag col-12 e claro digite seu nome dentro da h1. Feito isso então voltaremos ao nosso CSS onde iremos incrementar os seguintes códigos no nosso header:
+							</p>
+							<pre class="codigo">
+								.topo .container{padding-top: 10em;}
+								.topo h1{
+									color: #fff;
+									font-size: 3.6em;
+									text-align: center;
+								}
+								@media(min-width: 768px){
+									.topo{
+										background-attachment: fixed;
+										height: 80vh;
+									}
+									.topo h1{font-size: 6em;}
+								}
+							</pre>
+							<p>
+								Você pode observar que nosso header está ganhando vida aos poucos não é mesmo? Só que ao observarmos nosso header vemos que nossa fonte está com uma cara muito feia, então que tal se a gente colocar uma mais clean?! Para usaremos o Google Fonts um site da empresa Google que disponibiliza diversas fontes de livre uso, para acessar o link do site clique <a class="links" href="https://fonts.google.com">aqui</a>,como estamos apenas fazendo um exemplo usarei na fonte do header a Bungee Inline no em tanto ao fazer seu layout procure usar fontes cleans que não venha a poluir o seu site e que também não sejam ruins de leitura. Outro detalhe importante caso use o link import do css, sempre coloque ele no topo de seu site para que o carregamento do link seja o primeiro. Agora para finalizar de vez nosso header escreva a tag p dentro da coluna 12 de seu header e nela escreva uma frase legal de boas vindas, eu usarei a seguinte frase "Olá sejam bem-vindos ao meu portfa!". Assim que escrever sua frase insira o seguinte código CSS:                
+							</p>
+							<pre class="codigo">
+								.topo p{
+									color: #fff;
+									font-family: 'Raleway', sans-serif;
+									font-size: 2em;
+									text-align: center;
+								}
+							</pre>
+							<p>
+								No caso do meu header o resultado com as fontes que escolhi está este abaixo:
+							</p>
+							<img src="https://github.com/FrontendBH/Frontin-Brasil/blob/master/Assets/img/headerFinal.png?raw=true" alt="Header finalizado">
+							<p>
+								 Concluímos então nosso visual do header agora iremos para a parte de nosso menu, mas isso veremos em breve no sétimo post. 
+							</p>
+						</div>						
+					</dir>
+				</article><!--/Container de conteudos-->
+				<footer class="rodape">
+					<article class="container">
+						<div class="row">
+							<div class="col-12">
+								<p>
+									&copy; TODOS DIREITOS RESEVADOS 2017-2018 | DESENVOLVIMENTO:  <a class="link" href="https://www.facebook.com/andre.laurentino.18" target="_blanck">ANDRÉ LAURENTINO</a>
+								</p>
+							</div>
+						</div>
+					</article>
+				</footer><!--/Footer-->
+			</section><!--/Conteudos-->				
+		</main><!--/Container-Geral-->
+	</body>
+	<!--Scripts-->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
+	<script src="assets/js/main.js"></script>
+</html>

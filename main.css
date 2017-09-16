@@ -287,9 +287,10 @@ header h1{
 	overflow-y: scroll;
 }
 .artigos a.links{color: crimson;}		
-.artigos h2{
-	font-size: 1.7em;
-	font-family: var(--fonte_Header);}
+.artigos h2{font-size: 1.7em;}
+.artigos h3{font-size: 1.5em;}
+.artigos h4{font-size: 1.3em;}	
+.artigos h2, .artigos h3, .artigos h4{font-family: var(--fonte_Header);}
 .artigos p{
 	font-size: 1.2em;
 	font-family: var(--fonte_Paragrafo);}	
@@ -306,4 +307,25 @@ header h1{
 	color: #333;
 	text-decoration: none;}	
 /*midias*/
-audio, iframe, img, video{width: 100%;}	
+audio, iframe, img, video{width: 100%;} 
+/*Pre e code*/
+.codigo{
+	background-color: #000;
+	color: #dca814;
+	font: 0.9rem monospace;
+	padding: 1em;
+	margin: .5em 0;
+	overflow: auto;
+	direction: ltr;
+	text-align: left;
+	white-space: pre;
+	word-spacing: normal;
+	word-break: normal;
+	-moz-tab-size: 4;
+	-o-tab-size: 4;
+	tab-size: 4;
+	-webkit-hyphens: none;
+	-moz-hyphens: none;
+	-ms-hyphens: none;
+	hyphens: none;
+}

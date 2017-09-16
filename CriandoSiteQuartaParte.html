@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<!--CSS-->
+		<link rel="stylesheet" href="main.css">
+		<!--SEO-->
+		<meta name="author" content="André Rodrigues">
+		<meta name="description" content="Site voltado para compartilhar conhecimento de desenvolvimento web para Front-end">
+		<meta name="robots" content="index, follow">
+		<meta name="keywords" content="">		
+		<title>Frontin-Brasil</title>
+	</head>
+	<body>
+		<main class="geral">
+			<nav class="navbar">
+				<div class="logo">
+					<a href="">
+						<span>FRONTIN-</span>
+						BRASIL
+					</a>
+				</div>
+				<ul class="links">
+					<a href="index.html" class="scrollSuave">HOME</a>
+					<a href="#post" class="scrollSuave">POSTAGENS</a>
+					<a href="">VÍDEOS</a>
+					<a href="">VAGAS DE EMPREGO</a>
+					<a href="">E-BOOKS</a>
+					<a href="">SLIDES</a>
+					<a href="">CONTRIBUA</a>
+				</ul>
+			</nav><!--/menu-->
+			<section class="conteudo">
+				<header class="cabecalho1">
+					<article class="container">
+						<div class="row">
+							<div class="col-12">
+								<h1>CONSTRUINDO O PRIMEIRO SITE (PARTE 4)</h1>								
+							</div>		
+						</div>
+					</article>					
+				</header><!--/header-->
+				<article class="container artigos" id="post">
+					<dir class="row">
+						<div class="col-12">							
+							<h2>Deixando nosso layout mais Agradável</h2>
+							<p>
+								Começamos nosso layout com um reset para retirar o espaçamento do corpo da página, mas antes crie uma pasta chamada css e nela um arquivo chamado main.css após feito isso link sua folha estilo em sua página html caso ainda não saiba é desse jeito abaixo, mas sem os epaços entre o início e fim da tag confira: 
+							</p>
+							<code>								
+								< link href="css/main.css" rel="stylesheet" >							    
+							</code>							
+							<p>
+								 Após ter linkado a folha de estilo do seu site, abra o arquivo css e nele escreva os seguintes códigos:
+							</p>
+							<pre class="codigo">
+								/*Reset*/
+								html, body, div, span, applet, object, iframe,
+							h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+							a, abbr, acronym, address, big, cite, code,
+							del, dfn, em, img, ins, kbd, q, s, samp,
+							small, strike, strong, sub, sup, tt, var,
+							b, u, i, center,
+							dl, dt, dd, ol, ul, li,
+							fieldset, form, label, legend,
+							table, caption, tbody, tfoot, thead, tr, th, td,
+							article, aside, canvas, details, embed, 
+							figure, figcaption, footer, header, hgroup, 
+							menu, nav, output, ruby, section, summary,
+							time, mark, audio, video {
+								margin: 0;
+								padding: 0;
+								border: 0;								
+								font-size: 100%;
+								font: inherit;
+								vertical-align: baseline;}
+							article, aside, details, figcaption, figure, 
+							footer, header, hgroup, menu, nav, section {display: block;}
+							:root{line-height: 1.4;}
+							ol, ul {list-style: none;}
+							blockquote, q {quotes: none;}
+							blockquote:before, blockquote:after,
+							q:before, q:after {
+								content: '';
+								content: none;
+							}
+							table {
+								border-collapse: collapse;
+								border-spacing: 0;
+							}
+							</pre>
+							<p>
+								Esse código acima será responsável pelo reset de nosso site, feito isso mande um Ctrl+S na folha de estilo. Prosseguindo em nosso layout temos agora o nosso header onde iremos apresentar nosso site, afinal este será nosso cartão de visitas ;) ! Em sua folha de estilo escreva o seguinte código:   
+							</p>
+							<pre class="codigo">
+								/*header*/
+								.topo{
+									background-image: url(../img/header.jpg);
+									background-repeat: no-repeat;
+									background-size: 100%;
+									width: 100%;
+								}
+								@media(min-width: 768px){
+									.topo{
+										background-attachment: fixed;
+										height: 80vh;
+									}
+								}
+							</pre>
+							<p>
+								Se você está iniciando agora deve ter percebido que nosso layout está com alguns códigos diferentes não é mesmo?  Afinal o que é essa @media e este background-attachment: fixed;?  Esse @media se refere às mídias queryes que servirão para orientar os containers de nosso layout em telas diferentes e até mesmo corrigir algo caso tenha algum dificuldade em se ajustar em alguma tela, caso queira ver a respeito sobre o design responsivo clique <a class="links" href="" title="Para Conferir sobre responsividade clique aqui">aqui</a>
+							</p>
+							<pre class="codigo">
+								/*Overlay*/
+								.overlay{
+									background-color: #0006;
+									height: 100%;
+									width: 100%;
+								}	
+							</pre>
+							<p>
+								Feito isso perceba que corrigimos nosso problema da imagem que poderia interferir no nosso texto. Agora que temos nossa base do header pronto podemos partir para as nossas grids e containers, para acessar a Quinta parte clique <a class="links" href="CriandoSiteQuintaParte.html">aqui</a>.
+							</p>
+						</div>						
+					</dir>
+				</article><!--/Container de conteudos-->
+				<footer class="rodape">
+					<article class="container">
+						<div class="row">
+							<div class="col-12">
+								<p>
+									&copy; TODOS DIREITOS RESEVADOS 2017-2018 | DESENVOLVIMENTO:  <a class="link" href="https://www.facebook.com/andre.laurentino.18" target="_blanck">ANDRÉ LAURENTINO</a>
+								</p>
+							</div>
+						</div>
+					</article>
+				</footer><!--/Footer-->
+			</section><!--/Conteudos-->				
+		</main><!--/Container-Geral-->
+	</body>
+	<!--Scripts-->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
+	<script src="assets/js/main.js"></script>
+</html>

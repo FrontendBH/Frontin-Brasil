@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<!--CSS-->
+		<link rel="stylesheet" href="main.css">
+		<!--SEO-->
+		<meta name="author" content="André Rodrigues">
+		<meta name="description" content="Site voltado para compartilhar conhecimento de desenvolvimento web para Front-end">
+<meta name="robots" content="index, follow">
+		<meta name="keywords" content="">		
+		<title>Frontin-Brasil</title>
+	</head>
+	<body>
+		<main class="geral">
+			<nav class="navbar">
+				<div class="logo">
+					<a href="">
+						<span>FRONTIN-</span>
+						BRASIL
+					</a>
+				</div>
+				<ul class="links">
+					<a href="index.html" class="scrollSuave">HOME</a>
+					<a href="#post" class="scrollSuave">POSTAGENS</a>
+					<a href="">VÍDEOS</a>
+					<a href="">VAGAS DE EMPREGO</a>
+					<a href="">E-BOOKS</a>
+					<a href="">SLIDES</a>
+					<a href="">CONTRIBUA</a>
+				</ul>
+			</nav><!--/menu-->
+			<section class="conteudo">
+				<header class="cabecalho1">
+					<article class="container">
+						<div class="row">
+							<div class="col-12">
+								<h1>CONSTRUINDO O PRIMEIRO SITE (PARTE 2)</h1>								
+							</div>		
+						</div>
+					</article>					
+				</header><!--/header-->
+				<article class="container artigos" id="post">
+					<dir class="row">
+						<div class="col-12">							
+							<p>
+								Continuando o desenvolvimento de nosso site podemos observar que definimos já algumas partes importantes de nosso projeto, mas somente isso ainda não é importante! Ainda iremos trabalhar bastante.  Bom você deve está se perguntando o que são esses blocos? E o por que do uso deles não é mesmo?  Cada bloco desse aí é um container e como já sabe containers é responsável por armazenar alguma coisa. Antes no HTML4 os containers usados eram divs, claro que havia uso também de tabelas! Só que a partir da versão 4 o uso de tabelas na estrutura básica de um site foi diminuindo.
+							</p>
+							<p>
+								 Atualmente estamos na versão 5 do HTML, a mas o que isso significa e o que temos de bom? Podemos resumir em uma única frase talvez (melhoria na semântica), ao contrario das novas tags header, nav, section, main, footer entre outros do HTML recente as divs não são boas para semântica! A mas espera se não são boas podemos então parar de usar elas? Não é necessário abandonar o uso das divs, você ainda pode usa-las nas rows (linhas) e cols (colunas) de seu site.
+							</p>
+							<h2>Dando início a nosso HTML</h2>
+							<p>
+								Nosso documento irá se consistir de elementos simples como mostra a imagem abaixo:
+							</p>
+							<img src="https://github.com/FrontendBH/Frontin-Brasil/blob/master/Assets/img/estrutura.png?raw=true" alt="Imagem de código básico">
+							<p>								
+							Perceba que está realmente simples nada demais, mas agora vamos então começar a estrutura nosso layout. Para poupar nosso tempo que creio eu que você saiba trabalhar com editor de código, baixe o seguinte arquivo no Github <a class="links" href="https://github.com/FrontendBH/Frontin-Brasil/blob/master/materialUsoLayout/base.html">Base.html</a>. 
+							</p>
+							<h3> Afinal o que cada tag significa e pra que serve?</h3>
+							<p>
+								Como já havia dito essas são novas tags do HTML 5 e sua maior vantagem é questão semântica.  Para explicar ao certo todas elas vou deixar abaixo desde já o seu significado em português e sua funcionalidade, confira:
+							</p>
+							<h4>Article:</h4>
+							<p>
+								 Significado em português (artigo), nela podemos escrever nossos artigos. Você poderá usar está tag dentro de uma section, header e footer.
+							</p><hr>
+							<h4>
+								Section:
+							</h4>
+							<p>
+								 Seu significado em português é (sessão), você poderá usar para definir as sessões de seu site.
+							</p><hr>
+							<h4>
+								Main:
+							</h4>
+							<p>
+								Seu significado é (principal), nela você poderá colocar seus containers em destaque.
+							</p><hr>
+							<h4>
+								Header:
+							</h4>
+							<p>
+								  Seu significado em português (cabeçalho), nela você pode colocar uma apresentação de seu site e títulos de destaque.
+							</p><hr>
+							<h4>
+								Nav:
+							</h4>
+							<p>
+								  Seu significado em português (barra de navegação), nela você poderá colocar os links que apontarão os locais aonde você quer ir a seu site.
+							</p><hr>
+							<h4>
+								Footer:
+							</h4>
+							<p>
+								Significado em português (rodapé), nessa tag você poderá colocar algumas coisas extras de seu site como rede social, newsletters, categorias extras e agradecimentos.  
+							</p><hr>
+							<p>
+								  Depois de explicado o significado dessas tags que usaremos  em nosso layout é chegada a hora da explicação lógica, para ver a explicação lógica <a class="links" href="CriandoSiteTerceiraParte.html">CLIQUE AQUI</a> 
+							</p>
+						</div>						
+					</dir>
+				</article><!--/Container de conteudos-->
+				<footer class="rodape">
+					<article class="container">
+						<div class="row">
+							<div class="col-12">
+								<p>
+									&copy; TODOS DIREITOS RESEVADOS 2017-2018 | DESENVOLVIMENTO:  <a class="link" href="https://www.facebook.com/andre.laurentino.18" target="_blanck">ANDRÉ LAURENTINO</a>
+								</p>
+							</div>
+						</div>
+					</article>
+				</footer><!--/Footer-->
+			</section><!--/Conteudos-->				
+		</main><!--/Container-Geral-->
+	</body>
+	<!--Scripts-->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
+	<script src="assets/js/main.js"></script>
+</html>

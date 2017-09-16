@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<!--CSS-->
+		<link rel="stylesheet" href="main.css">
+		<!--SEO-->
+		<meta name="author" content="André Rodrigues">
+		<meta name="description" content="Site voltado para compartilhar conhecimento de desenvolvimento web para Front-end">
+		<meta name="robots" content="index, follow">
+		<meta name="keywords" content="">		
+		<title>Frontin-Brasil</title>
+	</head>
+	<body>
+		<main class="geral">
+			<nav class="navbar">
+				<div class="logo">
+					<a href="">
+						<span>FRONTIN-</span>
+						BRASIL
+					</a>
+				</div>
+				<ul class="links">
+					<a href="index.html" class="scrollSuave">HOME</a>
+					<a href="#post" class="scrollSuave">POSTAGENS</a>
+					<a href="">VÍDEOS</a>
+					<a href="">VAGAS DE EMPREGO</a>
+					<a href="">E-BOOKS</a>
+					<a href="">SLIDES</a>
+					<a href="">CONTRIBUA</a>
+				</ul>
+			</nav><!--/menu-->
+			<section class="conteudo">
+				<header class="cabecalho1">
+					<article class="container">
+						<div class="row">
+							<div class="col-12">
+								<h1>CONSTRUINDO O PRIMEIRO SITE (PARTE 5)</h1>								
+							</div>		
+						</div>
+					</article>					
+				</header><!--/header-->
+				<article class="container artigos" id="post">
+					<dir class="row">
+						<div class="col-12">							
+							<h2>Construindo nossas grids</h2>
+							<img src="https://mdn.mozillademos.org/files/13899/grid.png" alt="Grids para sites">
+							<small>IMAGEM RETIRADA DO SITE MDN - Mozilla</small>
+							<p>
+								Afinal porque precisamos de grids? Uma resposta bem simples seria pelo fato das grids servirem para controlar nossos containers, nela podemos definir onde ficará cada parte de nosso site e claro mantendo respeito de seu espaço. Em nosso CSS iremos incrementar a seguinte linha de código em nosso reset, veja abaixo:
+							</p>
+							<pre class="codigo">
+								box-sizing: border-box;
+							</pre>
+							<p>
+								Afinal por que usamos está propriedade? Usaremos está propriedade porque infelizmente o Box-model não é uma boa ele não consegue definir o tamanho final de um elemento.  A propriedade box-sizing tem suporte desde o IE-8 até mesmo navegadores como Firefox, Opera e Webkit. No em tanto pode haver casos onde tenha que aproveitar melhor a performance dessa propriedade usando o seguinte código:
+							</p>
+							<pre class="codigo">
+								*, *:after, *:before{box-sizing: border-box;}
+							</pre>
+							<h3>Definindo nossas colunas</h3>
+							<p>
+								 Já temos nossas colunas definidas, mas temos detalhes que merecem atenção! Ao definirmos nossas colunas usamos medidas em % para largura pelo fato de ser flexível e outra coisa interessante é que podemos definir larguras exatas somente em telas acima de 768px já que em telas menores nossas colunas irão pegar o valor automático, ou seja, 100%. Também se pode observar que trabalhamos com float uma única vez em telas maiores já que por padrão o float vem em none.     
+							</p>
+							<h3>Finalizando nossa grid</h3>
+							<p>
+								O código dessa linha possui um pseudo elemento chamado after que irá ter o content (conteúdo) vazio, clear (responsável por limpar nosso float) e logo após temos o display(responsável  por exibir até então em tabelas). Com nossa linha pronta agora só precisamos definir nosso container para isso escreva os seguintes códigos:    
+							</p>
+							<pre class="codigo">
+								/*container*/
+								.container{
+									margin: 0 auto;
+									width: 99%;
+								}
+								@media(min-width: 768px){
+									.container{width: 90%;}
+								}
+							</pre>
+							<p>
+								Com nossa grid pronta o que temos que fazer agora é inserir nossos textos em nosso site e controlar alguns espaçamentos, mas calma veremos isso na sexta parte para visualizar clique <a class="links" href="CriandoSiteSextaParte.html">aqui</a>. 
+							</p>
+						</div>						
+					</dir>
+				</article><!--/Container de conteudos-->
+				<footer class="rodape">
+					<article class="container">
+						<div class="row">
+							<div class="col-12">
+								<p>
+									&copy; TODOS DIREITOS RESEVADOS 2017-2018 | DESENVOLVIMENTO:  <a class="link" href="https://www.facebook.com/andre.laurentino.18" target="_blanck">ANDRÉ LAURENTINO</a>
+								</p>
+							</div>
+						</div>
+					</article>
+				</footer><!--/Footer-->
+			</section><!--/Conteudos-->				
+		</main><!--/Container-Geral-->
+	</body>
+	<!--Scripts-->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
+	<script src="assets/js/main.js"></script>
+</html>
