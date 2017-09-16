@@ -1,0 +1,29 @@
+/*cABEÇALHO PRINCIPAL*/
+.cabecalho{
+	background-image: url(http://goldwallpapers.com/uploads/posts/wallpaper-notebook/wallpaper_notebook_016.jpg);
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-size: contain;
+	height: auto;
+	width: 100%;}
+header h1{	
+	font-family: var(--fonte_Header);
+    font-size: 2em;}
+.cabecalho h1{color: #fff;}    
+.cabecalho p{
+    color: #fff; 
+	font-family: var(--fonte_Paragrafo);}
+.cabecalho .container{
+	padding-top: 4em;}
+/*Cabeçalhos diferentes*/
+.cabecalho1{
+	background-color: #fff;
+	color: var(--hover_menu);}		
+.cabecalho1 h1{text-align: center;}	
+@media(min-width: 48em){
+	.cabecalho{
+		background-size: cover;
+		height: 80vh;}
+	header h1{font-size: 3em;}	
+
+}	

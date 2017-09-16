@@ -1,0 +1,12 @@
+/*Links Fontes*/
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,600,700,800);
+@import url(https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css);
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+@import url('https://fonts.googleapis.com/css?family=Varela+Round');
+/*vars*/
+:root{
+	--fonte_Paragrafo: 'Raleway', sans-serif;
+	--fonte_Header: 'Poppins', sans-serif;
+	--fonte_Logo: 'Varela Round', sans-serif;
+}

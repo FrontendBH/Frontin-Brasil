@@ -1,0 +1,8 @@
+.rodape{
+	background-color: #fff;
+	margin: 0 auto;
+	width: 98%;}
+
+.rodape a.link, .rodape a.link:hover{
+	color: #333;
+	text-decoration: none;}	

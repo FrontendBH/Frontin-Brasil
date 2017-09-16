@@ -1,0 +1,36 @@
+.navbar{
+	background-color: var(--fundo_menu);
+	background-size: cover;
+	height: 64vh;
+	padding-top: 1em;
+	padding-left: 0.5em;
+	width: 100%;}	
+.navbar .logo a{
+	color: #ffeb3b;
+	font-family: var(--fonte_Logo);
+	font-size: 1.4em;
+	font-weight: bold;}	
+.logo a> span{color: #1abc9c;}	
+.navbar .links{margin-top:1em;}
+.navbar .logo a, .navbar .links a{text-decoration: none;}
+.navbar .links a{
+	color: #333;
+	font-family: var(--fonte_Paragrafo);
+	display: block;
+	margin: 1% 0;
+	padding: 0.55em 1em;}
+.navbar .links a:hover{
+	border-bottom: solid var(--hover_menu) 0.1em;
+	color: var(--hover_menu);
+	transition: linear 1s;
+}	
+@media(min-width: 48em){
+	.navbar{
+		min-height: 144vh;
+		max-height: 200vh;
+		width: 18%;
+	}
+	.navbar .logo{
+		border-bottom: 0.01em solid rgba(51, 51, 51, 0.41);
+		padding: 0.5em;}
+}	
