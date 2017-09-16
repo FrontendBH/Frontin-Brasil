@@ -1,1 +1,309 @@
-audio, iframe, img, video{width: 100%;}
+/*Cores*/
+@import'../assets/css/components/fontes.css';
+/*Fontes*/
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,600,700,800);
+@import url(https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css);
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+@import url('https://fonts.googleapis.com/css?family=Varela+Round');
+/*Varaiveis*/
+:root{
+	--fonte_Paragrafo: 'Raleway', sans-serif;
+	--fonte_Header: 'Poppins', sans-serif;
+	--fonte_Logo: 'Varela Round', sans-serif;
+	--artigos: #F5F5F5;
+	--fundo_menu: #fff;
+	--hover_menu:  #1abc9c;}	
+/*Reset*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	box-sizing: border-box;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;}
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {display: block;}
+:root{line-height: 1.4;}
+ol, ul {list-style: none;}
+blockquote, q {quotes: none;}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;}
+/*Botões*/
+
+/*Overlay*/
+.overlay{
+	background-color: rgba(0, 0, 0, 0.18);
+	height: 100%;
+	width: 100%;}
+/***Grids***/
+/*Coluns*/
+[class*="col-"] {padding: 15px;}
+@media(min-width: 48em){
+	[class*="col-"] {float: left;}
+	.col-1 {width: 8.33%;}
+	.col-2 {width: 16.66%;}
+	.col-3 {width: 25%;}
+	.col-4 {width: 33.33%;}
+	.col-5 {width: 41.66%;}
+	.col-6 {width: 50%;}
+	.col-7 {width: 58.33%;}
+	.col-8 {width: 66.66%;}
+	.col-9 {width: 75%;}
+	.col-10 {width: 83.33%;}
+	.col-11 {width: 91.66%;}
+	.col-12 {width: 100%;}}
+/*Rows*/
+.row::after {
+    content: "";
+    clear: both;
+    display: table;}
+/*Container*/
+.container{
+	margin: 0 auto;
+	width: 99%;}
+@media(min-width: 48em){
+	.container{width: 100%;}}
+/*Midias*/
+@import'../assets/css/components/midias.css';
+/*Floats*/
+.navbar, .conteudo{float: left;}
+/*Boxes*/
+figure.snip1208 {
+  font-family: 'Raleway', Arial, sans-serif;
+  color: #fff;
+  position: relative;
+  float: left;
+  overflow: hidden;
+  margin: 10px 1%;
+  min-width: 220px;
+  max-width: 310px;
+  width: 100%;
+  background-color: #fff;
+  color: #000000;
+  text-align: left;
+  font-size: 16px;
+}
+figure.snip1208 * {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+figure.snip1208 img {
+  max-width: 100%;
+  vertical-align: top;
+  -webkit-transform-origin: 50% 100%;
+  transform-origin: 50% 100%;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+figure.snip1208 figcaption {
+  padding: 25px;
+  position: relative;
+}
+figure.snip1208 .date,
+figure.snip1208 i {
+  background-color: #1abc9c;
+  top: 25px;
+  color: #fff;
+  left: 25px;
+  min-height: 60px;
+  min-width: 60px;
+  position: absolute;
+  text-align: center;
+}
+figure.snip1208 .date {
+  -webkit-transition-delay: 0.2s;
+  transition-delay: 0.2s;
+  font-size: 22px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+figure.snip1208 .date span {
+  display: block;
+  line-height: 30px;
+}
+figure.snip1208 .date .month {
+  font-size: 16px;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+figure.snip1208 i {
+  line-height: 60px;
+  font-size: 30px;
+  -webkit-transform: rotateY(-90deg);
+  transform: rotateY(-90deg);
+  -webkit-transition-delay: 0s;
+  transition-delay: 0s;
+}
+figure.snip1208 h3,
+figure.snip1208 p {
+  margin: 0;
+  padding: 0;
+}
+figure.snip1208 h3 {
+  margin-bottom: 10px;
+  display: inline-block;
+  font-weight: 600;
+  color: #333333;
+  text-transform: uppercase;
+}
+figure.snip1208 p {
+  font-size: 0.8em;
+  margin-bottom: 20px;
+  line-height: 1.6em;}
+figure.snip1208 .button {
+  border: medium none;
+  padding: 10px 20px;
+  background-color: #1abc9c;
+  font-weight: 800;
+  color: #ffffff;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-size: 0.8em;
+}
+figure.snip1208 .hover {
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  position: absolute;
+  z-index: 1;
+}
+figure.snip1208:hover img,
+figure.snip1208.hover img {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+figure.snip1208:hover .date,
+figure.snip1208.hover .date {
+  -webkit-transform: rotateY(90deg);
+  transform: rotateY(90deg);
+  -webkit-transition-delay: 0s;
+  transition-delay: 0s;
+}
+figure.snip1208:hover i,
+figure.snip1208.hover i {
+  -webkit-transform: rotateY(0);
+  transform: rotateY(0);
+  -webkit-transition-delay: 0.2s;
+  transition-delay: 0.2s;
+}
+figure.snip1208:hover button,
+figure.snip1208.hover button {
+  background-color: #117964;
+}
+/*Menu*/
+.navbar{
+	background-color: var(--fundo_menu);
+	background-size: cover;
+	height: 64vh;
+	padding-top: 1em;
+	padding-left: 0.5em;
+	width: 100%;}	
+.navbar .logo a{
+	color: #ffeb3b;
+	font-family: var(--fonte_Logo);
+	font-size: 1.4em;
+	font-weight: bold;}	
+.logo a> span{color: #1abc9c;}	
+.navbar .links{margin-top:1em;}
+.navbar .logo a, .navbar .links a{text-decoration: none;}
+.navbar .links a{
+	color: #333;
+	font-family: var(--fonte_Paragrafo);
+	display: block;
+	margin: 1% 0;
+	padding: 0.55em 1em;}
+.navbar .links a:hover{
+	border-bottom: solid var(--hover_menu) 0.1em;
+	color: var(--hover_menu);
+	transition: linear 1s;
+}	
+@media(min-width: 48em){
+	.navbar{
+		min-height: 144vh;
+		max-height: 200vh;
+		width: 18%;
+	}
+	.navbar .logo{
+		border-bottom: 0.01em solid rgba(51, 51, 51, 0.41);
+		padding: 0.5em;}
+}	
+/*Header*/
+.cabecalho{
+	background-image: url(http://goldwallpapers.com/uploads/posts/wallpaper-notebook/wallpaper_notebook_016.jpg);
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-size: contain;
+	height: auto;
+	width: 100%;}
+header h1{	
+	font-family: var(--fonte_Header);
+    font-size: 2em;}
+.cabecalho h1{color: #fff;}    
+.cabecalho p{
+    color: #fff; 
+	font-family: var(--fonte_Paragrafo);}
+.cabecalho .container{
+	padding-top: 4em;}
+/*Cabeçalhos diferentes*/
+.cabecalho1{
+	background-color: #fff;
+	color: var(--hover_menu);}		
+.cabecalho1 h1{text-align: center;}	
+@media(min-width: 48em){
+	.cabecalho{
+		background-size: cover;
+		height: 80vh;}
+	header h1{font-size: 3em;}	
+
+}	
+/*Sections*/
+.conteudo{width: 100%;}
+.conteudo .artigos{margin-top: 1em;}
+.artigos{
+	background-color: var(--artigos);
+	min-height: 106vh;
+	height: 120vh;
+	overflow-y: scroll;
+}
+.artigos a.links{color: crimson;}		
+.artigos h2{
+	font-size: 1.7em;
+	font-family: var(--fonte_Header);}
+.artigos p{
+	font-size: 1.2em;
+	font-family: var(--fonte_Paragrafo);}	
+@media(min-width: 48em){
+	.conteudo{width: 81.4%;}
+}		
+/*Rodape*/
+.rodape{
+	background-color: #fff;
+	margin: 0 auto;
+	width: 98%;}
+
+.rodape a.link, .rodape a.link:hover{
+	color: #333;
+	text-decoration: none;}	
+/*midias*/
+audio, iframe, img, video{width: 100%;}	
