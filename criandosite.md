@@ -1,13 +1,13 @@
-## Construindo o primeiro site <br>
+# Construindo o primeiro site <br>
 ![Site sendo desenvolvido](https://tecnoblog.net/wp-content/uploads/2015/07/google-material-design-website-700x262.jpeg)
 <p>
   Afinal criar um site é realmente fácil? Por onde começar? Diante essas e outras perguntas que escrevi esse post onde estarei dizendo os principais passos para desenvolver o seu primeiro site.
 </p>  
-#### POR ONDE COMEÇAR?
+## POR ONDE COMEÇAR?
 <p>  
   Antes de começar a escrever sua primeira linha de código é importante entender seu público alvo e o que você pretende oferecer! Faça pesquisas sobre seu assunto ofereça um conteúdo que seja um diferencial diante os outros sites existentes, claro nada impede que você busque referencias em informações existentes. Essa primeira etapa será importante para o seu SEO Por tanto não tenha preguiça de estudar o conteúdo de seu site, pois, assim será fácil de elaborar um bom texto e dar suporte ao produto ou serviço oferecido fora que também irá te permitir elaborar futuras campanhas de marketing.
 </p>
-#### SEGUNDA ETAPA PROJETANDO UMA INTERFACE
+## SEGUNDA ETAPA PROJETANDO UMA INTERFACE
 <p>
   Está etapa assim como a de estudos de conteúdo também merece atenção! Mesmo que você não consiga um alcance de 100% nessa etapa ainda sim é necessário um estudo profundo em sua interface. Muitos desenvolvedores pensam que o trabalho de desenvolver uma interface é algo focado diretamente ao Front-end e que se trata de uma tarefa muito simples, mas calma my friend isso envolve até mesmo outras áreas! No em tanto não vamos sair do nosso foco aqui srsr.., depois de ler essa parte você deve está se perguntando “Se envolve várias partes então eu não consigo desenvolver sozinho meu primeiro site?”, claro que pode! Afinal este post se trata sobre isso ;) . Iremos fazer iniciar pela parte de UX ou (experiência do usuário), definiremos como será o esqueleto de nosso projeto e o que ele irá fazer podemos então desenhar um Wireframe de nosso site da seguinte maneira:
 </p>  
