@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<!--CSS-->
+		<link rel="stylesheet" href="main.css">
+		<!--SEO-->
+		<meta name="author" content="André Rodrigues">
+		<meta name="description" content="Site voltado para compartilhar conhecimento de desenvolvimento web para Front-end">
+		<meta name="robots" content="index, follow">
+		<meta name="keywords" content="Boas praticas CSS">		
+		<title>Frontin-Brasil</title>
+	</head>
+	<body>
+		<main class="geral">
+			<nav class="navbar">
+				<div class="logo">
+					<a href="">
+						<span>FRONTIN-</span>
+						BRASIL
+					</a>
+				</div>
+				<ul class="links">
+					<a href="index.html" class="scrollSuave">HOME</a>
+					<a href="#post" class="scrollSuave">POSTAGENS</a>
+					<a href="">VÍDEOS</a>
+					<a href="">VAGAS DE EMPREGO</a>
+					<a href="">E-BOOKS</a>
+					<a href="">SLIDES</a>
+					<a href="">CONTRIBUA</a>
+				</ul>
+			</nav><!--/menu-->
+			<section class="conteudo">
+				<header class="cabecalho1">
+					<article class="container">
+						<div class="row">
+							<div class="col-12">
+								<h1>Boas práticas CSS</h1>									
+							</div>		
+						</div>
+					</article>					
+				</header><!--/header-->
+				<article class="container artigos" id="post">
+					<dir class="row">
+						<div class="col-12">	
+						    <img src="https://cssjockey.com/wp-content/uploads/2013/05/cssjockey-css.png" alt="Imagem CSS">
+						    <small>Imagem tirada do site CSS Jokey</small>						
+						    <h2>Usando classes e não Ids</h2>
+							<p>
+								 Talvez para muitos escrever uma folha de estilo seja algo simples do tipo navegador fez a leitura e ficou bonito o layout está ok. Mas se engana quem pensa assim! Hoje estou aqui para falar sobre uma boa pratica que irá mudar seu jeito de desenvolver sites caso você seja do tipo de desenvolvedor que não ligue tanto assim com seu CSS.
+							</p>
+							<h2>Afinal qual a diferença?</h2>
+							<p>
+								 Uma das terríveis práticas que sempre observo em desenvolvedores tanto iniciantes e até mesmo aqueles de meio tempo no mercado é o uso de (ids) em todo seu projeto “A, mas o id é um seletor CSS que irá trazer exclusividade ao elemento que quero estilizar”, sim de fato ele dá está exclusividade ou como podemos falar estilização específica, só que nesse trabalho usando ids temos um problema enorme que nada mais que é (uso único). As ids são únicas! Você não consegue trabalhar de maneira flexível com mais de uma. Agora diferente do caso da id temos a classe só que antes de falarmos mais sobre a classe irei demonstrar um exemplo de um código que irá nos mostrar diversas situações de uso, confira abaixo:  
+							</p>
+							<pre class="codigo">
+								< div id="centro blue"> 
+								< div class="centro blue">
+								/*CSS code*/
+								.centro{
+								    height: 40vh;
+									margin: 4em auto;
+									width: 40%;
+							    }
+							    .blue{background-color: blue;}
+							    #centro{
+								    height: 40vh;
+									margin: 4em auto;
+									width: 40%;
+							    }
+							    #blue{background-color: blue;}
+							</pre>
+							<p>
+								Se executarmos o código acima você notará que nossas classes nos irão retornar a estilização que fizemos, mas ao contrario delas as ids até então irão ter problemas em apresentar o resultado esperado. Com tudo isso já tem um motivo do uso de classe! As classes não são únicas podendo ter  várias em único container inclusive temos um exemplo bacana que usa muitas classes para controlar suas grids que nada mais é que o framework Bootstrap. Muitos acham desnecessário o uso de muitas classes em um container como: class= “col-lg-10 col-md-10 col-sm-10 col-xs-12”. Só que essas classes são fundamentais no controle opcional de várias telas, sim poderíamos ter uma única classe que se se comporta de x jeito em tela menor e y jeito em telas maiores! Só que veja bem você não teria opções. Voltando ao foco maior então quando for desenvolver seu projeto procure usar classes por esse motivo citado e tente deixar as ids para trabalho com Java Script que por sinal são boas com ele. Bom espero que tenha gostado dessa dica e até a próxima amigo.
+							</p>
+						</div>						
+					</dir>
+				</article><!--/Container de conteudos-->
+				<footer class="rodape">
+					<article class="container">
+						<div class="row">
+							<div class="col-12">
+								<p>
+									&copy; TODOS DIREITOS RESEVADOS 2017-2018 | DESENVOLVIMENTO:  <a class="link" href="https://www.facebook.com/andre.laurentino.18" target="_blanck">ANDRÉ LAURENTINO</a>
+								</p>
+							</div>
+						</div>
+					</article>
+				</footer><!--/Footer-->
+			</section><!--/Conteudos-->				
+		</main><!--/Container-Geral-->
+	</body>
+	<!--Scripts-->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
+	<script src="assets/js/main.js"></script>
+</html>
